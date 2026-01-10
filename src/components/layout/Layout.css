@@ -1,0 +1,97 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu a {
+  margin-left: 1.5rem;
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* Banner */
+.banner {
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.banner p {
+  margin-top: 0.25rem;
+  color: #e0e7ff;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 220px);
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #0f172a;
+  color: #cbd5f5;
+}
+.menu a {
+  margin-left: 1.5rem;
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 4px;
+}
