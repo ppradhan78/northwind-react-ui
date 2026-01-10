@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <div>React App</div>
+      <div>
+        <Header></Header>
+      </div>
     </>
   );
 }
