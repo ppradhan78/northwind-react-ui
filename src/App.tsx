@@ -1,11 +1,14 @@
-import Header from "./components/Header";
+import Banner from "./components/banner/banner";
 
 function App() {
   return (
     <>
-      <div>
-        <Header></Header>
-      </div>
+      <Banner
+        title={"Northwind"}
+        subtitle={"TRADERS"}
+        imageUrl={"../../../public/images/north-wind.jpg"}
+        buttonText={"North wind banner"}
+      ></Banner>
     </>
   );
 }

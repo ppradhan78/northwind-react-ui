@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5 rem 1rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  border-radius: 15px;
+  gap: 1rem;
+}
+
+.banner-image img {
+  max-width: 80px;
+  width: 100%;
+  border-radius: 15px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
