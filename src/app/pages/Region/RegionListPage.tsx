@@ -24,13 +24,19 @@ export default function RegionListPage() {
   }, []);
 
   const loadRegions = async () => {
-    const res = await regionApi.getAll();
-    setRegions(
-      res.data.map((r: any) => ({
-        regionId: r.regionId,
-        regionDescription: r.regionDescription,
-      }))
-    );
+    try {
+      const res = await regionApi.getAll();
+      setRegions(
+        res.map((r: any) => ({
+          regionId: r.regionId,
+          regionDescription: r.regionDescription,
+        }))
+      );
+    } catch (error) {
+      console.log(error);
+    } finally {
+      // always executed
+    }
   };
 
   // Filter
