@@ -61,7 +61,7 @@ const domains = [
     title: "Research",
     color: "#bda9c0",
     items: ["MUI", "Others"],
-    path: "/Research",
+    path: "/reports",
   },
 ];
 
